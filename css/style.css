@@ -1,0 +1,348 @@
+        body {
+            font-family: 'Raleway', sans-serif;
+            box-sizing: border-box;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+        }
+        
+        header,
+        main {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        /*navigation*/
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        nav img {
+            height: 19px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        nav ul li {
+            width: 160px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-top: 2px solid transparent;
+            height: 55px;
+        }
+        
+        nav ul li:first-child,
+        nav ul>li:hover {
+            border-top: 2px solid #0065FC;
+        }
+        
+        h1 {
+            font-size: 22px;
+            line-height: 25.83px;
+            margin-bottom: 5px;
+        }
+        
+        header p {
+            font-size: 16px;
+            line-height: 18.78px;
+            margin-top: 0;
+        }
+        
+        form>span {
+            width: 49px;
+            height: 49px;
+            display: inline-block;
+            background-color: #F2F2F2;
+            line-height: 45px;
+            text-align: center;
+            font-size: 21px;
+            margin-right: 0;
+            position: absolute;
+            border-radius: 10px 0 0 10px;
+        }
+        
+        #search {
+            width: 300px;
+            height: 49px;
+            border: 2px solid #F2F2F2;
+            border-right: none;
+            margin-left: 49px;
+            position: relative;
+            font-weight: 700;
+            font-size: 18px;
+            color: black;
+            padding-left: 10px;
+        }
+        
+        #submit-search,
+        [type="button"] {
+            position: absolute;
+            width: max-content;
+            height: 49px;
+            margin-left: -5px;
+            background-color: #0065FC;
+            border-radius: 0 10px 10px 0;
+            border: none;
+            color: white;
+        }
+        
+        [type="button"] {
+            display: none;
+        }
+        
+        .filtres {
+            margin: 50px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .filtres p {
+            width: 50px;
+            font-weight: 700;
+            padding: 10px;
+            margin: 0 50px 0 0;
+        }
+        
+        .filtres span {
+            width: max-content;
+            padding: 10px;
+            margin-right: 20px;
+            display: inline-block;
+            border: 2px solid #F2F2F2;
+            vertical-align: middle;
+            border-radius: 20px;
+        }
+        
+        .filtres span>i {
+            width: 30px;
+            color: #0065FC;
+        }
+        
+        .filtres span:nth-child(5) {
+            background-color: #DEEBFF;
+        }
+        
+        .fa-info {
+            color: #0065FC;
+            border: 1px solid #F2F2F2;
+            border-radius: 50%;
+        }
+        /*contenu principal page 3 sections*/
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        main section {
+            background-color: #F2F2F2;
+        }
+        
+        main section:nth-child(1) {
+            width: 60%;
+            flex-grow: 2;
+            margin-right: 50px;
+            border-radius: 15px;
+        }
+        
+        main section:nth-child(2) {
+            flex-grow: 1;
+            border-radius: 15px;
+        }
+        
+        main section:nth-child(3) {
+            width: 100%;
+            background-color: white;
+        }
+        
+        .cards_hebergement {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        section:nth-child(2) figure {
+            width: 330px;
+        }
+        
+        .populaires {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            align-items: center;
+        }
+        
+        figure {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            margin-left: 6px;
+            margin-right: 6px;
+            margin-top: 6px;
+            margin-bottom: 10px;
+            border: 5px solid white;
+            overflow: hidden;
+        }
+        
+        .cards_hebergement figure {
+            width: 240px;
+            height: 200px;
+        }
+        
+        .populaires figure {
+            height: 144px;
+            flex-direction: row;
+        }
+        
+        .cards_hebergement figure a {
+            width: 246px;
+            height: 125px;
+        }
+        
+        .populaires figure a {
+            width: 137px;
+            height: 144px;
+        }
+        
+        .cards_hebergement figure a img {
+            height: 125px;
+        }
+        
+        .populaires figure a img {
+            height: 100%;
+        }
+        
+        figure a img {
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        figure figcaption {
+            margin-left: 12px;
+        }
+        
+        .cards_hebergement figure figcaption h3,
+        main section:nth-child(3) figure figcaption h3 {
+            width: 100%;
+            font-size: 16px;
+            line-height: 18px;
+            margin: 12px 0 0 0;
+        }
+        
+        .cards_hebergement figure figcaption p {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0 0 12px 0;
+        }
+        
+        .fa-solid {
+            font-size: 12px;
+        }
+        
+        main section:nth-child(2) h2 {
+            position: relative;
+            margin-left: 20px;
+        }
+        
+        main section:nth-child(2) h2 i {
+            position: absolute;
+            right: 21px;
+        }
+        
+        main section:nth-child(3) div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        main section:nth-child(3) figure {
+            width: 302px;
+            height: 445px;
+            background-color: white;
+            border: 0;
+            box-shadow: #F2F2F2 5px 5px 10px;
+        }
+        
+        main section:nth-child(3) div figure a img {
+            height: 390px;
+        }
+        
+        footer {
+            background-color: #F2F2F2;
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        @media screen and (max-width:768px) {
+            #search {
+                width: calc(100% - 98px);
+            }
+            #submit-search {
+                display: none;
+            }
+            [type="button"] {
+                display: block;
+            }
+            .filtres {
+                flex-wrap: wrap;
+            }
+            .filtres p {
+                width: 100%;
+                order: -1;
+            }
+            .filtres span {
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            main section:nth-child(2) {
+                order: -1;
+                flex: 1 0 100%;
+            }
+            main section:nth-child(1) {
+                margin-right: 0;
+            }
+            figure a,
+            .cards_hebergement figure a {
+                width: 100%;
+            }
+            section:nth-child(2) figure {
+                width: 90%;
+                justify-content: flex-start;
+            }
+            main section:nth-child(3) div {
+                flex-direction: column;
+            }
+            main section:nth-child(1) div figure a img,
+            main section:nth-child(3) div figure a img {
+                height: 134px;
+                width: 100%;
+            }
+            main section:nth-child(3) div figure,
+            main section:nth-child(1) div figure {
+                width: 100%;
+                height: 190px;
+            }
+            .cards_hebergement figure figcaption p {
+                margin: 0 0 5px 0;
+            }
+        }
